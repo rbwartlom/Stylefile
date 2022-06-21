@@ -1,0 +1,21 @@
+from dhooks import Webhook
+import requests
+import time
+import datetime
+from bs4 import BeautifulSoup, SoupStrainer
+from dhooks import Webhook
+#set1 = {"r4e3", "hueu"}
+#set2 = {"r4e3"}
+#hueu = {"name": "Kevin", "type": "shbh"}
+#r4e3 = {"name": "Marvin", "type": "staruhu"}
+#print((str(set1 - set2))["name"])
+#for v in hueu:
+#    if v.type in set1 - set2:
+#        v.name
+
+sendto_webhook = "https://discord.com/api/webhooks/822574588129968179/KVtDJPGx_90FWzbY6vL1GvJNE3KLdDoGfmsiNf8pEuYX6E4pCF6Tf1cWLBinnLrygRFF"
+
+sku_set_new = {"yessiiir": {"sku": "r", "name": "r", "link": "r"}}
+
+hook = Webhook(sendto_webhook)
+hook.send("hola")
